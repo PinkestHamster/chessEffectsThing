@@ -1,0 +1,11 @@
+.user-data/
+node_modules/
+dist/
+release/
+snapshots/*
+!snapshots/README.txt
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+*.lnk
+Chess-Vision-FX.exe

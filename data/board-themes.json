@@ -1,0 +1,37 @@
+{
+  "selected": "grey",
+  "themes": [
+    {
+      "name": "Chess.com Pink",
+      "builtIn": true,
+      "colors": {
+        "move_highlight_light": "#EEAEB6",
+        "move_highlight_dark": "#EC9BA8",
+        "normal_light": "#FEFFFE",
+        "normal_dark": "#FBD9E1",
+        "checked_king_light": "#F19299",
+        "checked_king_dark": "#EF818C",
+        "capturable_target_light": "#DADBDA",
+        "capturable_target_dark": "#D8BAC1",
+        "capturable_target_highlight_light": "#CC959C",
+        "capturable_target_highlight_dark": "#CB8590"
+      }
+    },
+    {
+      "name": "grey",
+      "builtIn": false,
+      "colors": {
+        "move_highlight_light": "#BEC8CE",
+        "move_highlight_dark": "#A6B0B6",
+        "normal_light": "#D8D9D8",
+        "normal_dark": "#A8A9A8",
+        "checked_king_light": "#E08188",
+        "checked_king_dark": "#CA6B72",
+        "capturable_target_light": "#A3ACB1",
+        "capturable_target_dark": "#909190",
+        "capturable_target_highlight_light": "#A3ACB1",
+        "capturable_target_highlight_dark": "#8F979C"
+      }
+    }
+  ]
+}

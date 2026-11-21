@@ -1,0 +1,46 @@
+{
+  "name": "chess-vision-fx",
+  "version": "0.1.0",
+  "description": "Chess Vision FX – cosmetic desktop overlay with CV-based capture detection",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.main.json",
+    "start": "npm run build && electron .",
+    "dev": "npm run build && electron . --dev",
+    "package:win": "npm run build && node scripts/package_windows.js",
+    "test": "node scripts/run_tests.js"
+  },
+  "build": {
+    "appId": "com.chessvisionfx.app",
+    "productName": "Chess Vision FX",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "src/renderer/**/*",
+      "python/**/*.py",
+      "images/**/*"
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "python/**/*.py"
+    ],
+    "win": {
+      "icon": "images/chess-vision.ico",
+      "target": [
+        "portable"
+      ],
+      "artifactName": "Chess-Vision-FX-${version}-portable.${ext}"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^26.0.12",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

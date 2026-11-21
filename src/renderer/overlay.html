@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: http: file:;" />
+  <link rel="stylesheet" href="overlay.css" />
+  <title>Chess Vision FX Debug</title>
+</head>
+<body>
+  <div id="overlay">
+    <div id="output">
+      <div class="output-box"><b>Thinking</b><span id="thinking">Waiting for the starting position</span></div>
+      <div class="output-box"><b>Action</b><span id="action">No verified move yet</span></div>
+      <div id="counts">You: white · White: 16 · Black: 16</div>
+    </div>
+    <div id="board-container">
+      <div id="fx-container"></div>
+      <div id="square-labels"></div>
+    </div>
+  </div>
+  <script src="overlay.js"></script>
+</body>
+</html>
